@@ -20,18 +20,23 @@ function cifrar() {
 
  function code() {
      btn.style.display = 'none';
-     var key1= parseInt(document.getElementById('key1').value);
-     var phrase = document.getElementById('phrase').value.toUpperCase();
-     var cipher = '';
-
-     for (var i = 0; i < phrase.length; i++) {
-         var positionAscii = phrase.charCodeAt(i);
-         if(positionAscii == 32){
-             cipher +=String.fromCharCode(32);
-         }
+     let key1= parseInt(document.getElementById('key1').value);
+     let phrase = document.getElementById('phrase').value;
+     let cipher = '';
+ 
+     for (let i = 0; i < phrase.length; i++) {
+         let positionAscii = phrase.charCodeAt(i);
+         if(65<= positionAscii && positionAscii<=90){
+             cipher += String.fromCharCode((positionAscii-65+key1)%26+65); 
+            }
+         else if(97<= positionAscii && positionAscii<=122 ){
+             cipher += String.fromCharCode((positionAscii-97+key1)%26+97);
+            
+            }
          else {
-             cipher += String.fromCharCode((positionAscii-65+key1)%26+65);
-         }
+             cipher += String.fromCharCode(positionAscii);
+
+            }
         }
     document.getElementById('cifrado').innerHTML=cipher;
     }
@@ -48,6 +53,4 @@ function decifrar(){
 
 
 }
-
-
 
