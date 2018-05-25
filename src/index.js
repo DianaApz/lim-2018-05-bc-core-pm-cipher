@@ -13,25 +13,24 @@ let btn1 = document.getElementById('btn1');
 btn1.addEventListener('click', cifrar);
 
 function cifrar() {
-btn.style.display = 'none';
-cipher.style.visibility= 'visible';
-let send=document.getElementById('send');
-send.addEventListener('click', code);
+ btn.style.display = 'none';
+ cipher.style.visibility= 'visible';
+ let send=document.getElementById('send');
+ send.addEventListener('click', code);
+ 
+ function code() {
+     btn.style.display = 'none';
+     var key1= parseInt(document.getElementById('key1').value);
+     var phrase = document.getElementById('phrase').value.toUpperCase();
+     var cipher = '';
 
-function code() {
-    btn.style.display = 'none';
-    var key1= document.getElementById('key1').value;
-    var phrase = document.getElementById('phrase').value;
-    var phrase1= phrase.toUpperCase();
-    for (var letter = 0; letter < phrase1.length; letter++) {
-        var positionAscii = phrase1.charCodeAt(letter);
-        var positionCipher = (positionAscii-65+key1)%26+65;
-        var cipher = String.fromCharCode(positionCipher);
+     for (var i = 0; i < phrase.length; i++) {
+         var positionAscii = phrase.charCodeAt(i);
+         cipher += String.fromCharCode((positionAscii-65+key1)%26+65);
         
+        }
+    document.getElementById('cifrado').innerHTML=cipher;
     }
-    document.getElementById('cifrado').innerHTML= cipher;
-   
-}
 
 }
 
