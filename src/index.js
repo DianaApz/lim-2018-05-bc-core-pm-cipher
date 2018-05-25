@@ -17,7 +17,7 @@ function cifrar() {
  cipher.style.visibility= 'visible';
  let send=document.getElementById('send');
  send.addEventListener('click', code);
- 
+
  function code() {
      btn.style.display = 'none';
      var key1= parseInt(document.getElementById('key1').value);
@@ -26,8 +26,12 @@ function cifrar() {
 
      for (var i = 0; i < phrase.length; i++) {
          var positionAscii = phrase.charCodeAt(i);
-         cipher += String.fromCharCode((positionAscii-65+key1)%26+65);
-        
+         if(positionAscii == 32){
+             cipher +=String.fromCharCode(32);
+         }
+         else {
+             cipher += String.fromCharCode((positionAscii-65+key1)%26+65);
+         }
         }
     document.getElementById('cifrado').innerHTML=cipher;
     }
