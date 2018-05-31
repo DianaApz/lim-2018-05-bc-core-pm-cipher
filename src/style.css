@@ -11,7 +11,7 @@ body {
 header{
   width: 100%;
   overflow: hidden;
-  background:#0cad85;
+  background:#0adaa6;
   margin-bottom: 30px;
   font-family: Arial;
 
@@ -22,6 +22,24 @@ header{
   max-width: 1000px;
   margin: auto;
   overflow: hidden;
+ 
+
+}
+#introduction{
+  padding:3%;
+  font-family: Arial, Helvetica, sans-serif;
+  font-style:bold;
+
+}
+
+
+.text{
+  display:inline-block;
+  width:95%;
+  font-size:20px;
+
+ 
+ 
 }
 
 div.block{
@@ -33,7 +51,7 @@ div.block{
   border-color: grey;
   padding: 50px;
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 18px;
+  font-size: 25px;
   overflow: hidden;
   
 }
