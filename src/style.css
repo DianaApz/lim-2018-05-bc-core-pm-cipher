@@ -11,7 +11,7 @@ body {
 header{
   width: 100%;
   overflow: hidden;
-  background:#66cc99;
+  background:#0cad85;
   margin-bottom: 30px;
   font-family: Arial;
 
@@ -40,16 +40,17 @@ div.block{
 
 header .logo{
   color:#f2f2f2;
-  font-size: 30px;
+  font-size: 33px;
   line-height: 100px;
   float: left;
-  font-family: Arial;
-  font-weight: bold;
+  font-family: 'Titan One', cursive;
+  
      
 }
 section .sentence{
-  font-family: cursive;
-  font-size: 20px;
+  font-size: 26px;
+  font-family: 'Permanent Marker', cursive;
+  color:grey;
   width: 90%;
   max-width: 1000px;
   margin: auto;
@@ -88,4 +89,12 @@ header nav a:hover {
 
 
   }
+}
+.hidden{
+  display: none;
+
+}
+.show{
+  display:block;
+
 }

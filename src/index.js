@@ -3,18 +3,17 @@ let introduction= document.getElementById('introduction');
 let cipher= document.getElementById('cipher');
 let decipher= document.getElementById('decipher');
 
-cipher.style.visibility= 'hidden';
-decipher.style.visibility= 'hidden';
-introduction.style.visibility='visible'; 
+cipher.style.display= 'none';
+decipher.style.display= 'none'; 
 
 //inicio
 let home= document.getElementById('home');
 home.addEventListener('click',inicio);
 
 function inicio(){
-    cipher.style.visibility= 'hidden';
-    decipher.style.visibility= 'hidden';
-    introduction.style.visibility='visible'; 
+    cipher.style.display= 'none';
+    decipher.style.display= 'none';
+    introduction.style.display='block'; 
 }
 
 //cifrar
@@ -24,9 +23,9 @@ pageOne.addEventListener('click', cifrar);
 
 
 function cifrar() {
-  introduction.style.visibility='hidden';
-  decipher.style.visibility = 'hidden';
-  cipher.style.visibility= 'visible';
+  introduction.style.display='none';
+  decipher.style.display = 'none';
+  cipher.style.display='block';
 
     document.getElementById('send1').addEventListener('click', ()=>{
      let number1= parseInt(document.getElementById('number1').value);
@@ -45,9 +44,9 @@ let pageTwo = document.getElementById('pageTwo');
 pageTwo.addEventListener('click', decifrar);
 
 function decifrar(){
-    introduction.style.visibility = 'hidden';
+    introduction.style.display = 'none';
     cipher.style.display = 'none';
-    decipher.style.visibility ='visible';
+    decipher.style.display ='block';
     
     document.getElementById('send2').addEventListener('click', ()=>{
      let number2= parseInt(document.getElementById('number2').value);
