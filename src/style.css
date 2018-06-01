@@ -8,10 +8,24 @@ body {
 
 }
 
+.img{
+  
+ padding: 200px;
+ background: url(235.jpg);
+ background-repeat: no-repeat;
+ background-size: 1000px 600px;
+ background-position: center;
+ text-align: auto;
+ font-family: 'Permanent Marker', cursive;
+ font-size: 25px;
+
+}
+
+
 header{
   width: 100%;
   overflow: hidden;
-  background:#0adaa6;
+  background:#0cce9de7;
   margin-bottom: 30px;
   font-family: Arial;
 
@@ -25,11 +39,17 @@ header{
  
 
 }
-#introduction{
-  padding:3%;
+
+
+.intro{
+  
   font-family: Arial, Helvetica, sans-serif;
   font-style:bold;
-
+  width: 80%;
+  max-width: 850px;
+  margin: auto;
+  overflow: hidden;
+  text-align:auto;
 }
 
 
@@ -107,12 +127,22 @@ header nav a:hover {
 
 
   }
-}
-.hidden{
-  display: none;
+  .intro, .img{
+    background-size: 445px 250px;
+    padding: 40px;
+    font-size: 13px;
+    margin: 0;
+   
+   text-align:left;
+   width: 90%;
+   max-width: 500px;
+      
 
-}
-.show{
-  display:block;
 
+  }
+  .block{
+    width: 60%;
+    
+  
+  }
 }

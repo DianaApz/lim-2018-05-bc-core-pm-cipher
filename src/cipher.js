@@ -33,5 +33,6 @@ window.cipher = {
       }
     }
     return answerDecipher;
-  }
+  },
+
 };
