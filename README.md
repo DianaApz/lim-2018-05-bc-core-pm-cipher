@@ -1,15 +1,18 @@
 # Cifrado César
 
-Este proyecto le permite al usuario crear una manera diferente para comunicarte con tus amigos 
-sin que los demás se enteren y protege la información , 
-ya que si los mensaje cifrados son interceptados, no podrán ser leídos.
-Cifrado Cesar esta enfocado al público en general ya que todos tenemos algo importante o secreto 
-que compartir entre amigos, familiares y hasta en negocios. 
+*"Crea una manera diferente para comunicarte con tus amigos sin que los demás se enteren."*
+ 
+Este proyecto le permite al usuario crear una manera diferente para comunicarte 
+con tus amigos sin que los demás se enteren y protege la información , ya que 
+si los mensaje cifrados son interceptados, no podrán ser leídos.
+Cifrado Cesar esta enfocado al público en general ya que todos tenemos algo 
+importante o secreto que compartir entre amigos, familiares y hasta en negocios. 
 
 Ejemplo:
-Está proxima una reunión con un socio y vas a entregar la información que es importante
-para la empresa pero no debe filtrarse a la competencia. Con Cifrado Cesar eso no pasará 
-te brindará la seguridad que necesitas, ya que solo tu y socio entenderán el mensaje😎.
+Está proxima una reunión con un socio y vas a entregar la información que es 
+importante para la empresa, pero no debe filtrarse a la competencia.
+Con Cifrado Cesar eso no pasará te brindará la seguridad que necesitas, 
+ya que solo tú y tu socio entenderán el mensaje 😎.
 
 
 ## Introducción
@@ -40,21 +43,28 @@ sistema ROT13.
 
 El objetivo fundamental del proyecto es ofrecer seguridad y privacidad al usuario 
 cuando quiera enviar mensajes importantes.
-Cifrar o descifrar el mensaje significa alterarlos, mediante el uso 
+Cifrar el mensaje significa alterarlos, mediante el uso 
 de una clave, de modo que no sea entendible para quienes no tengan dicha clave. 
 Luego en el proceso de descifrado, aquellos que sí tengan la clave podrán 
 utilizarla para obtener la información original. 
 
 
-## Estructura
-![caeser-cipher](inicio.jpg)
-![caeser-cipher](cifrar.jpg)
+## Primeros Pasos
+ ![caeser-cipher](Optimized-inicio.jpg)
+ ![caeser-cipher](Optimized-cifrar.jpg)
 
 
 ## Instrucciones
 1. El usuario puede seleccionar cifrar o descifrar el mensaje que desee.
-2. El usuario puede escoger el número que desee que funcionará como clave para cifrar la frase que el desee.
 
+2. Si el usuario escoge cifrar primero debe ingresa el número que desee ya que ese número funcionará como clave.
+   Luego debe ingresar la frase para que cambie(cifrado) y click en enviar.
+
+![caeser-cipher](CIFRAR.gif)
+
+3. Si el usuario escoge descifrar debe ingresar su clave. Luego debe ingresar el texto cifrado y click en enviar para obtener la frase original(descifrado).
+
+![caeser-cipher](GIF2.gif)
 
 
 

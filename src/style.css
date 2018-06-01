@@ -1,6 +1,6 @@
 * {
+  padding: 0;
   margin:0;
-  padding:0;
 }
 
 body {
@@ -11,7 +11,7 @@ body {
 .img{
   
  padding: 200px;
- background: url(235.jpg);
+ background: url(desk1.jpg);
  background-repeat: no-repeat;
  background-size: 1000px 600px;
  background-position: center;
@@ -117,6 +117,11 @@ header nav a:hover {
   color: black;
 }
 
+.block{
+  margin:auto;
+  padding: 20%;
+}
+
 @media screen and (max-width:950px) {
   header .logo,
   header nav {
@@ -131,18 +136,20 @@ header nav a:hover {
     background-size: 445px 250px;
     padding: 40px;
     font-size: 13px;
-    margin: 0;
+    
    
    text-align:left;
-   width: 90%;
+   height:auto;
    max-width: 500px;
       
 
 
   }
-  .block{
-    width: 60%;
-    
+  div.block {
+   text-align: left;
+
+   font-size: 18px;
+   
   
   }
 }
