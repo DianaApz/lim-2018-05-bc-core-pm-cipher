@@ -35,4 +35,19 @@ window.cipher = {
     return answerDecipher;
   },
 
+  createCipherWithOffset:(offset)=> {
+    let newObject = {
+     encode:(string)=> {
+       return(offset,string);
+     },
+     decode:(string)=> {
+       return(offset,string);
+      }
+    }
+    return newObject;
+  },  
+
+  
+  
+  
 };

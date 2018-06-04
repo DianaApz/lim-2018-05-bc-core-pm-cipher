@@ -4,45 +4,74 @@
 }
 
 body {
-  background: #fffffa;
-
+  background: #fafcfb;
 }
-
-.img{
-  
- padding: 200px;
- background: url(desk1.jpg);
- background-repeat: no-repeat;
- background-size: 1000px 600px;
- background-position: center;
- text-align: auto;
- font-family: 'Permanent Marker', cursive;
- font-size: 25px;
-
-}
-
 
 header{
   width: 100%;
   overflow: hidden;
-  background:#0cce9de7;
+  background:#5ed6b8;
   margin-bottom: 30px;
   font-family: Arial;
-
 }
 
+header .logo{
+  color:#fafcfb;
+  font-size: 33px;
+  line-height: 100px;
+  float: left;
+  font-family: 'Titan One', cursive;    
+}
+
+header nav {
+  float: right;
+  line-height: 100px;
+}
+header nav a {
+  display: inline-block;
+  color: #fafcfb;
+  text-decoration: none;
+  padding: 10px 20px;
+  line-height:normal;
+  font-size: 23px;
+  font-weight: bold;
+  
+}
 .content{
   width: 90%;
   max-width: 1000px;
   margin: auto;
   overflow: hidden;
- 
-
 }
 
+.img{
+  
+ padding: 150px;
+ background: url(desk3.jpg);
+ background-repeat: no-repeat;
+ background-position: center;
+ text-align: center;
+ font-family: 'Nunito', sans-serif;
+ font-size: 22px;
+ color:#686868;
+}
+
+header nav a:hover {
+  background:#fff;
+  border-radius:50px;
+  color: black;
+}
+
+section .sentence{
+  font-size: 26px;
+  font-family: 'Permanent Marker', cursive;
+  color:#909090;
+  width: 90%;
+  max-width: 1000px;
+  margin: auto;
+}
 
 .intro{
-  
   font-family: Arial, Helvetica, sans-serif;
   font-style:bold;
   width: 80%;
@@ -52,14 +81,10 @@ header{
   text-align:auto;
 }
 
-
 .text{
   display:inline-block;
   width:95%;
   font-size:20px;
-
- 
- 
 }
 
 div.block{
@@ -76,80 +101,36 @@ div.block{
   
 }
 
-header .logo{
-  color:#f2f2f2;
-  font-size: 33px;
-  line-height: 100px;
-  float: left;
-  font-family: 'Titan One', cursive;
-  
-     
-}
-section .sentence{
-  font-size: 26px;
-  font-family: 'Permanent Marker', cursive;
-  color:grey;
-  width: 90%;
-  max-width: 1000px;
-  margin: auto;
-  
-
-
-}
-header nav {
-  float: right;
-  line-height: 100px;
-}
-header nav a {
-  display: inline-block;
-  color: white;
-  text-decoration: none;
-  padding: 10px 20px;
-  line-height:normal;
-  font-size: 20px;
-  font-weight: bold;
-  
-}
-
-header nav a:hover {
-  background:#fff;
-  border-radius:50px;
-  color: black;
-}
-
-.block{
-  margin:auto;
-  padding: 20%;
+.gif{
+  padding:50px;
 }
 
 @media screen and (max-width:950px) {
   header .logo,
   header nav {
-      width:100%;
-      text-align:center;
-      line-height: 50px;
-
-
-
+   width:100%;
+   text-align:center;
+   line-height: 50px;
   }
   .intro, .img{
     background-size: 445px 250px;
-    padding: 40px;
+    padding: 50px 100px;
     font-size: 13px;
-    
-   
-   text-align:left;
-   height:auto;
-   max-width: 500px;
-      
-
-
+    text-align:left;
+    height:auto;
+    max-width: 500px;
+  } 
+  .gif{
+    width: 100%;
+    padding: 10px 0px;
   }
-  div.block {
-   text-align: left;
-
-   font-size: 18px;
-   
-  
+  .block{
+  width:50%;
   }
+  .sentence{
+    font-size: 20px;
+  }
+
 }
+
+
