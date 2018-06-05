@@ -1,56 +1,57 @@
 //mandamos llamar a los elementos
-let btn = document.getElementById('btn');
-let cipher = document.getElementById('cipher');
-let decipher = document.getElementById('decipher');
+let introduction= document.getElementById('introduction');
+let cipher= document.getElementById('cipher');
+let decipher= document.getElementById('decipher');
 
-cipher.style.visibility = 'hidden';
-decipher.style.visibility = 'hidden';
+cipher.style.display= 'none';
+decipher.style.display= 'none'; 
 
+//inicio
+let home= document.getElementById('home');
+home.addEventListener('click',inicio);
 
+function inicio(){
+    cipher.style.display= 'none';
+    decipher.style.display= 'none';
+    introduction.style.display='block'; 
+}
 
 //cifrar
-let btn1 = document.getElementById('btn1');
-btn1.addEventListener('click', cifrar);
+let pageOne= document.getElementById('pageOne');
+pageOne.addEventListener('click', cifrar);
+
+
 
 function cifrar() {
- btn.style.display = 'none';
- cipher.style.visibility= 'visible';
- let send=document.getElementById('send');
- send.addEventListener('click', code);
+  introduction.style.display='none';
+  decipher.style.display = 'none';
+  cipher.style.display='block';
 
- function code() {
-     btn.style.display = 'none';
-     let key1= parseInt(document.getElementById('key1').value);
-     let phrase = document.getElementById('phrase').value;
-     let cipher = '';
- 
-     for (let i = 0; i < phrase.length; i++) {
-         let positionAscii = phrase.charCodeAt(i);
-         if(65<= positionAscii && positionAscii<=90){
-             cipher += String.fromCharCode((positionAscii-65+key1)%26+65); 
-            }
-         else if(97<= positionAscii && positionAscii<=122 ){
-             cipher += String.fromCharCode((positionAscii-97+key1)%26+97);
-            
-            }
-         else {
-             cipher += String.fromCharCode(positionAscii);
-
-            }
-        }
-    document.getElementById('cifrado').innerHTML=cipher;
-    }
+    document.getElementById('send1').addEventListener('click', ()=>{
+     let number1= parseInt(document.getElementById('number1').value);
+     let phrase1 = document.getElementById('phrase1').value;
+     let answer1= document.getElementById('answer1');
+     answer1.innerHTML= window.cipher.encode(number1,phrase1);
+    });
 
 }
+
+    
+
 
 //decifrar
-let btn2 = document.getElementById('btn2');
-btn2.addEventListener('click', decifrar);
+let pageTwo = document.getElementById('pageTwo');
+pageTwo.addEventListener('click', decifrar);
+
 function decifrar(){
-    btn.style.display = 'none';
-    decipher.style.visibility ='visible';
+    introduction.style.display = 'none';
     cipher.style.display = 'none';
-
-
+    decipher.style.display ='block';
+    
+    document.getElementById('send2').addEventListener('click', ()=>{
+     let number2= parseInt(document.getElementById('number2').value);
+     let phrase2 = document.getElementById('phrase2').value;
+     let answer2= document.getElementById('answer2');
+     answer2.innerHTML= window.cipher.decode(number2,phrase2);
+    });
 }
-

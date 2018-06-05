@@ -1,50 +1,91 @@
-
 <!DOCTYPE html>
-<html>
-<head>
-    <meta charset='utf-8' />
-    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>Caesar Cipher</title>
-    <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel='stylesheet' href='style.css' />
-</head>
-<body>
-    <h1>CIFRADO CESAR</h1>
-    <h3>Crea una manera diferente para comunicarse </h3>
+<html lang="en">
+ <head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   <link rel="stylesheet" href="style.css">
+   <link href="https://fonts.googleapis.com/css?family=Titan+One" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css?family=Nunito:800" rel="stylesheet">
+   <title>Caeser Cipher</title>
+ </head>
+ <body>
+   <header class="">
+     <div class="content">
+      <div class="logo">CIFRADO CESAR</div>
+      <nav>
+        <a id="home" href="#Inicio" >Inicio</a>
+        <a id="pageOne" href="#Cifrar" >Cifrar</a>
+        <a id="pageTwo" href="#Descifrar" >Descifrar</a>
+      </nav>
+     </div>
+   </header>
 
-    <section id= 'btn'>
-        <button id='btn1'>CIFRAR</button>
-        <button id='btn2'>DESCIFRAR</button>
-    </section>
+   <section>
+     
+     <div class="sentence">"Crea una manera diferente para comunicarte con tus 
+       amigos sin que los demás se enteren." 
+       
+      </div>
     
 
+     <div id="introduction" class="intro">
+       <div class="img"> 
+         <h3>BIENVENIDOS !</h3>
+         <p>Cifrado de Cesar es una página que te permite ocultar tus mensajes, modificándolo para que 
+          ninguna palabra pueda entenderse y sólo quien conozca la clave pueda leerlo. </p>
+       </div> 
 
-    <section id= 'cipher'>
-        <form action=''>
-            Elige e ingresa tu número: <br>
-            <input type= 'number' id ='key1'><br>
-            Ingresa la frase que desee cifrar:<br>
-            <input type= 'text' id ='phrase'><br>
-            <button type='button' id='send'>ENVIAR</button>
-            <p id = 'cifrado'></p>
-            
-        </form>
+       <h2>INSTRUCCIONES :</h2><br>
+      
+       <h2>Para cifrar</h2>
+       <dl>
+         <dt class="text"><img src="check.png" alt="checked">Escoge un número que funcionará como tu clave secreta e ingrésalo.</dt>
+         <dt class="text"><img src="check.png" alt="checked">Coloca el texto que desees cifrar (la frase que escribas cambiará a otra frase).</dt>
+         <dt class="text"><img src="check.png" alt="checked">Luego presiona el botón enviar y obtendras una frase nueva(frase cifrada).</dt>
+       </dl>
+       <img class="gif" src="C2.gif" alt="cipher1">
+       
+
+
+       <h2>Para descifrar</h2>       
+       <dl>
+         <dt class="text"><img  src="check.png" alt="checked">Debes colocar el número, que es tu clave secreta.</dt> 
+         <dt class="text"><img  src="check.png" alt="checked">Coloca el texto que desees descifrar (la frase cifrada que escribas cambiará a la frase original).</dt>
+         <dt class="text"><img  src="check.png" alt="checked">Luego presiona el botón enviar y obtendrás la frase original. </dt> 
+         <dt class="text"><img  src="check.png" alt="checked">Tip : Comparte tu clave secreta solo con las personas que tu desees y entenderán tu mensaje.</dt>
+       </dl>
+       <img class="gif" src="D2.gif" alt="decipher1">
+      </div>
+     <br>
+     <div id= "cipher" class="block">
+       <form >
+         Elige e ingresa un número que será tu clave: <br>
+         <input type= "number" id ="number1"><br>
+         Ingresa la frase que desee cifrar:<br>
+         <input type= "text" id ="phrase1"><br>
+         <button type="button" id="send1">ENVIAR</button>
+         <p id = "answer1"></p>
+       </form>
+     </div>
+  
+ 
+ 
+     <div id= "decipher" class="block">
+       <form >
+         Ingresa tu número clave: <br>
+         <input type= "number" id = "number2" ><br>
+         Ingresa la frase que desee descifrar: <br>
+         <input type= "text" id = "phrase2" ><br>
+         <button type="button" id ="send2">ENVIAR</button>
+         <p id ="answer2"></p>
+ 
+       </form>
+     </div>
     </section>
-
-
-    <section id= 'decipher'>
-        <form action="">
-            Ingresa tu número clave: <br>
-            <input type= 'number' id = 'key1' ><br>
-            Ingresa la frase que desee descifrar: <br>
-            <input type= 'text' id = 'phrase' ><br>
-            <button id ='answer'>ENVIAR</button>
-
-        </form>
-   </section>
-   <div id='root'></div>
-    <script src='cipher.js'></script>
-    <script src='index.js'></script>
-    
-</body>
+  
+  <script src="cipher.js"></script>
+  <script src="index.js"></script>
+ </body>
 </html>

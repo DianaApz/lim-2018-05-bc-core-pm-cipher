@@ -1,0 +1,137 @@
+* {
+  padding: 0;
+  margin:0;
+}
+
+body {
+  background: #fafcfb;
+}
+
+header{
+  width: 100%;
+  overflow: hidden;
+  background:#5ed6b8;
+  margin-bottom: 30px;
+  font-family: Arial;
+}
+
+header .logo{
+  color:#fafcfb;
+  font-size: 33px;
+  line-height: 100px;
+  float: left;
+  font-family: 'Titan One', cursive;    
+}
+
+header nav {
+  float: right;
+  line-height: 100px;
+}
+header nav a {
+  display: inline-block;
+  color: #fafcfb;
+  text-decoration: none;
+  padding: 10px 20px;
+  line-height:normal;
+  font-size: 23px;
+  font-weight: bold;
+  
+}
+.content{
+  width: 90%;
+  max-width: 1000px;
+  margin: auto;
+  overflow: hidden;
+}
+
+.img{
+  
+ padding: 150px;
+ background: url(desk3.jpg);
+ background-repeat: no-repeat;
+ background-position: center;
+ text-align: center;
+ font-family: 'Nunito', sans-serif;
+ font-size: 22px;
+ color:#686868;
+}
+
+header nav a:hover {
+  background:#fff;
+  border-radius:50px;
+  color: black;
+}
+
+section .sentence{
+  font-size: 26px;
+  font-family: 'Permanent Marker', cursive;
+  color:#909090;
+  width: 90%;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.intro{
+  font-family: Arial, Helvetica, sans-serif;
+  font-style:bold;
+  width: 80%;
+  max-width: 850px;
+  margin: auto;
+  overflow: hidden;
+  text-align:auto;
+}
+
+.text{
+  display:inline-block;
+  width:95%;
+  font-size:20px;
+}
+
+div.block{
+  width:30%;
+  max-width: 1000px;
+  margin: auto;
+  border-style: dotted;
+  border-width: thick;
+  border-color: grey;
+  padding: 50px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 25px;
+  overflow: hidden;
+  
+}
+
+.gif{
+  padding: 5% 15% 8%;
+}
+
+@media screen and (max-width:950px) {
+  header .logo,
+  header nav {
+   width:100%;
+   text-align:center;
+   line-height: 50px;
+  }
+  .img{
+    background-size: 100%;
+    padding: 20% 15%;
+    font-size: 13px;
+    text-align:left;
+    height:auto;
+    max-width: 500px;
+  } 
+  .intro{
+    max-width: 500px;
+  }
+  .gif{
+    width: 100%;
+    padding: 1% 0% 3%;
+  }
+  div.block{
+  width:50%;
+  }
+  .sentence{
+    font-size: 20px;
+  }
+
+}
