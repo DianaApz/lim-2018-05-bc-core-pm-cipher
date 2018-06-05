@@ -102,7 +102,7 @@ div.block{
 }
 
 .gif{
-  padding:50px;
+  padding: 5% 15% 8%;
 }
 
 @media screen and (max-width:950px) {
@@ -112,19 +112,22 @@ div.block{
    text-align:center;
    line-height: 50px;
   }
-  .intro, .img{
-    background-size: 445px 250px;
-    padding: 50px 100px;
+  .img{
+    background-size: 100%;
+    padding: 20% 15%;
     font-size: 13px;
     text-align:left;
     height:auto;
     max-width: 500px;
   } 
+  .intro{
+    max-width: 500px;
+  }
   .gif{
     width: 100%;
-    padding: 10px 0px;
+    padding: 1% 0% 3%;
   }
-  .block{
+  div.block{
   width:50%;
   }
   .sentence{
@@ -132,5 +135,3 @@ div.block{
   }
 
 }
-
-

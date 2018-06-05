@@ -2,8 +2,8 @@
 
 *"Crea una manera diferente para comunicarte con tus amigos sin que los demás se enteren."*
  
-Este proyecto le permite al usuario crear una manera diferente para comunicarte 
-con tus amigos sin que los demás se enteren y protege la información , ya que 
+Este proyecto le permite al usuario crear una manera diferente para comunicarse 
+con sus amigos sin que los demás se enteren y protege la información , ya que 
 si los mensaje cifrados son interceptados, no podrán ser leídos.
 Cifrado Cesar esta enfocado al público en general ya que todos tenemos algo 
 importante o secreto que compartir entre amigos, familiares y hasta en negocios. 
@@ -49,8 +49,24 @@ Luego en el proceso de descifrado, aquellos que sí tengan la clave podrán
 utilizarla para obtener la información original. 
 
 
-## Primeros Pasos
+## Proceso
+### Primer mockup
+ ![caeser-cipher](Optimized-primer.jpg)
+![caeser-cipher](Optimized-segundo.jpg)
+#### Entrevistas:
+- La página sería muy útil cuando quiera compartir mis datos como dirección y algunas cosas solo entre familia.
+- Me serviría para mandar mensajes a mis amigas en mi trabajo sin que nadie lo sepa.
+- Podría enviar mis informes a mis compañeros cuando sean proyectos confidenciales.
+- Con la página enviaría mensajes ocultos a mis amigos para invitarlos a una reunión, así personas externas no se enterarían.
+
+#### Feedback:
+- Sugiero una introducción para saber el objetivo de la página.
+- Me gustaría instrucciones para que saber como usarlo.
+- Si las instrucciones tendrían los pasos para cada seccion de cifrar o descifrar sería más entendible.
+- Si se visualizará en un video las instrucciones podría hacerlo paso a paso.
+
  ![caeser-cipher](Optimized-inicio.jpg)
+
  ![caeser-cipher](Optimized-cifrar.jpg)
 
 

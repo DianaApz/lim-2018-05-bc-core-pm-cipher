@@ -36,18 +36,15 @@ window.cipher = {
   },
 
   createCipherWithOffset:(offset)=> {
-    let newObject = {
-     encode:(string)=> {
-       return(offset,string);
+    return {
+     encode:(string) => {
+       return cipher.encode(offset,string);
      },
-     decode:(string)=> {
-       return(offset,string);
+     decode:(string) =>{
+       return cipher.decode(offset,string);
       }
     }
-    return newObject;
+     
   },  
-
-  
-  
   
 };
